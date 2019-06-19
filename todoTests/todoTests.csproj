@@ -55,8 +55,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="delete-cosmosdb-for-tests.sh" />
     <None Include="packages.config" />
     <None Include="App.config" />
+    <None Include="create-cosmosdb-for-tests.sh" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\src\todo.csproj">
