@@ -1,1 +1,1 @@
-az group delete --name "CosmosDBForTests"
+CALL az group delete --name "CosmosDBForTests"
