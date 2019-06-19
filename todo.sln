@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "todo", "src\todo.csproj", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "todoTests", "todoTests\todoTests.csproj", "{F70CA041-8D14-47DF-8D65-287848E71605}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{C7519C3C-14C6-456B-AC04-314479CAFC57}"
+	ProjectSection(SolutionItems) = preProject
+		create-cosmosdb-for-tests.sh = create-cosmosdb-for-tests.sh
+		delete-cosmosdb-for-tests.sh = delete-cosmosdb-for-tests.sh
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
