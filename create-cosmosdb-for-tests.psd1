@@ -15,8 +15,8 @@ $result = az cosmosdb create --resource-group $RESOURCE_GROUP --name $ACCOUNT_NA
 
 $documentEndpoint = $(az cosmosdb show --name $ACCOUNT_NAME --resource-group $RESOURCE_GROUP --query "documentEndpoint")
 
-echo "Document endpoint:"
-echo $documentEndpoint
-echo "##vso[task.setvariable variable=CosmosDBEndpoint]$documentEndpoint"
-echo "##vso[task.setvariable variable=CosmosDBName]$ACCOUNT_NAME"
-echo "##vso[task.setvariable variable=CosmosDBRG]$RESOURCE_GROUP"
+write-host "Document endpoint:"
+write-host $documentEndpoint
+write-host "##vso[task.setvariable variable=CosmosDBEndpoint]$documentEndpoint"
+write-host "##vso[task.setvariable variable=CosmosDBName]$ACCOUNT_NAME"
+write-host "##vso[task.setvariable variable=CosmosDBRG]$RESOURCE_GROUP"
