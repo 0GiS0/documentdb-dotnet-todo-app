@@ -1,3 +1,3 @@
-$variables.CosmosDBAccountName
-$variables.CosmosDBRg
-az group delete --name $variables.CosmosDBRg --yes --no-wait
+echo "$CosmosDBAccountName"
+echo "$CosmosDBRg"
+az group delete --name "$CosmosDBRg" --yes --no-wait
