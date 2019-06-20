@@ -10,10 +10,10 @@ az group create --name $RESOURCE_GROUP --location $LOCATION
 az cosmosdb create --resource-group $RESOURCE_GROUP --name $ACCOUNT_NAME --kind GlobalDocumentDB
 
 #Get the primary key
-$primaryKey="$(az cosmosdb list-keys --name $ACCOUNT_NAME --resource-group $RESOURCE_GROUP --query "primaryMasterKey" --output tsv)"
+primaryKey=$(az cosmosdb list-keys --name $ACCOUNT_NAME --resource-group $RESOURCE_GROUP --query "primaryMasterKey" --output tsv)
 
 #Get the endpoint
-$endpoint="$(az cosmosdb show --name $ACCOUNT_NAME --resource-group $RESOURCE_GROUP --query "documentEndpoint" --output tsv)"
+endpoint=$(az cosmosdb show --name $ACCOUNT_NAME --resource-group $RESOURCE_GROUP --query "documentEndpoint" --output tsv)
 
 echo "##vso[task.setvariable variable=CosmosDBRg]$RESOURCE_GROUP"
 echo "##vso[task.setvariable variable=CosmosDBAccountName]$ACCOUNT_NAME"
