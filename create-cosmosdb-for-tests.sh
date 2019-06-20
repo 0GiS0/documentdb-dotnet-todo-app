@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #Variables
 RESOURCE_GROUP=CosmosDB$RANDOM
 LOCATION=northeurope
