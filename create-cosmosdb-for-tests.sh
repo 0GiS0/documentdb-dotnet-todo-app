@@ -15,7 +15,7 @@ $primaryKey=$(az cosmosdb list-keys --name $ACCOUNT_NAME --resource-group $RESOU
 #Get the endpoint
 $endpoint=$(az cosmosdb show --name $ACCOUNT_NAME --resource-group $RESOURCE_GROUP --query "documentEndpoint" --output tsv)
 
-echo "##vso[task.setvariable variable=CosmosDBRg;]$RESOURCE_GROUP"
-echo "##vso[task.setvariable variable=CosmosDBAccountName;]$ACCOUNT_NAME"
-echo "##vso[task.setvariable variable=CosmosDBEndpoint;]$endpoint"
-echo "##vso[task.setvariable variable=CosmosDBAuthKey;]$key%"
+echo "##vso[task.setvariable variable=CosmosDBRg]$RESOURCE_GROUP"
+echo "##vso[task.setvariable variable=CosmosDBAccountName]$ACCOUNT_NAME"
+echo "##vso[task.setvariable variable=CosmosDBEndpoint]$endpoint"
+echo "##vso[task.setvariable variable=CosmosDBAuthKey]$key%"
