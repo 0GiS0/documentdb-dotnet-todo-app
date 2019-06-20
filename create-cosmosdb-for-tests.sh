@@ -4,7 +4,7 @@ LOCATION=northeurope
 ACCOUNT_NAME=cosmos$RANDOM
 
 #Create a resource group
-az group create --name $RESOURCE_GROUP --location $LOCATION
+az group create --name $RESOURCE_GROUP --location $LOCATION --tags 
 
 #Create a CosmosDB account
 az cosmosdb create --resource-group $RESOURCE_GROUP --name $ACCOUNT_NAME --kind GlobalDocumentDB
