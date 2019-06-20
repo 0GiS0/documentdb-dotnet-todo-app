@@ -1,7 +1,7 @@
 #Variables
-$RESOURCE_GROUP=CosmosDB$RANDOM
-$LOCATION=northeurope
-$ACCOUNT_NAME=cosmos$RANDOM
+RESOURCE_GROUP=CosmosDB$RANDOM
+LOCATION=northeurope
+ACCOUNT_NAME=cosmos$RANDOM
 
 #Create a resource group
 az group create --name $RESOURCE_GROUP --location $LOCATION
