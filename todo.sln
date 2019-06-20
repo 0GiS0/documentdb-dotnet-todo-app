@@ -10,7 +10,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{C7519C3C-14C6-456B-AC04-314479CAFC57}"
 	ProjectSection(SolutionItems) = preProject
 		create-cosmosdb-for-tests.bat = create-cosmosdb-for-tests.bat
+		create-cosmosdb-for-tests.sh = create-cosmosdb-for-tests.sh
 		delete-cosmosdb-for-tests.bat = delete-cosmosdb-for-tests.bat
+		delete-cosmosdb-for-tests.sh = delete-cosmosdb-for-tests.sh
 	EndProjectSection
 EndProject
 Global
