@@ -1,5 +1,2 @@
 #!/bin/bash
-
-echo $(CosmosDBAccountName)
-echo $(CosmosDBRg)
-az group delete --name $(CosmosDBRg) --yes --no-wait
+az group delete --name $1 --yes --no-wait
