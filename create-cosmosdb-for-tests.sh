@@ -20,4 +20,4 @@ endpoint=$(az cosmosdb show --name $ACCOUNT_NAME --resource-group $RESOURCE_GROU
 echo "##vso[task.setvariable variable=CosmosDBRg]$RESOURCE_GROUP"
 echo "##vso[task.setvariable variable=CosmosDBAccountName]$ACCOUNT_NAME"
 echo "##vso[task.setvariable variable=CosmosDBEndpoint]$endpoint"
-echo "##vso[task.setvariable variable=CosmosDBAuthKey]$key"
+echo "##vso[task.setvariable variable=CosmosDBAuthKey;issecret=true]$key"
